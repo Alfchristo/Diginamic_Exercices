@@ -2,13 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/approche-imperative" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/approche-objet" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/demo-jdbc" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Java/demo-spring" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Kafka/tpKafkaSpark" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Python/python-Objet" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Python/pythonImperatif" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/SQL/diginamic-db-conception" vcs="Git" />
   </component>
 </project>
