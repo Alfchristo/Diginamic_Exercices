@@ -16,39 +16,38 @@ potentiellement être en équipe avec d’autres joueurs.
 
 ### Dictionnaire des données
 
-| Nom                   | Désignation                                   | Type  | Taille    | Entité
-| --------------------- | --------------------------------------------- | ----- | --------- | ---------------	
-| date_compte_joueur	| Date de création du compte du joueur	        | DATE	| 	        | Joueurs		
-| date_creation	        | Date de création de l'équipe	                | DATE	| 	        | Equipes		
-| date_partie	        | Date de la partie	                            | DATE	| 	        | Partie		
-| description	        | Description de l'accessoire	                |VARCHAR| 255	    | Accessoires		
-| durée_partie	        | Durée de la partie	                        | TIME	| 	        | Partie		
-| email_joueur	        | Courriel du joueur	                        |VARCHAR| 25	    | Joueurs		
-| id_acces	            | Identifiant de l'accessoire	                | Int	| 10	    | Accessoires		
-| id_carte	            | Identifiant de la carte	                    | Int	| 10	    | Cartes		
-| id_equipe	            | Identifiant de l'équipe	                    | Int	| 10	    | Equipes		
-| id_joueur	            | Identifiant du joueur	                        | Int	| 10	    | Joueurs		
-| id_partie	            | Identifiant de la partie	                    | Int	| 10	    | Partie		
-| limite_joueur	        | Limite nombre de joueurs dans la carte	    | Int	| 3	        | Cartes		
-| mdp_joueur	        | Mot de passe de compte du joueur	            |VARCHAR|20	        | Joueurs		
-| nom_acces	            | Nom de l'accessoire	                        |VARCHAR| 65	    | Accessoires		
-| nom_carte	            | Nom de la carte	                            |VARCHAR| 25	    | Cartes		
-| nom_equipe	        | Nom de l'équipe	                            |VARCHAR| 25	    | Equipes		
-| nom_joueur	        | Nom du joueur	                                |VARCHAR| 20	    | Joueurs		
-| prenom_joueur	        | Prenom du joueur	                            |VARCHAR| 65	    | Joueurs		
-| rang	                | Numero de rang	                            | Int	| 5	        | Rangs		
-| role_equipe	        | Rôle des membres de l'équipe	                |VARCHAR| 65	    | Equipes		
-| score_equipe	        | Score de l'équipe	                            | Int	| 15	    | Equipes		
-| score_globale	        | Score globable des joueurs	                | Int	| 15	    | Rangs		
-| score_partie	        | Score de la partie	                        | Int	| 10	    | Partie		
-| taille_carte	        | Taille de la carte	                        | Int	| 25	    | Cartes		
-| type_acces	        | Type d'accessoire	                            |VARCHAR| 65	    | Accessoires		
-| type_carte	        | Type de la carte	                            |VARCHAR| 120	    | Cartes		
-
+| Nom                 | Désignation                             | Type    | Taille | Entité        |
+|---------------------|-----------------------------------------|---------|--------|---------------|
+| date_compte_joueur	 | Date de création du compte du joueur	   | DATE	   | 	      | Joueurs		     |
+| date_creation	      | Date de création de l'équipe	           | DATE	   | 	      | Equipes		     |
+| date_partie	        | Date de la partie	                      | DATE	   | 	      | Partie		      |
+| description	        | Description de l'accessoire	            | VARCHAR | 255	   | Accessoires		 |
+| durée_partie	       | Durée de la partie	                     | TIME	   | 	      | Partie		      |
+| email_joueur	       | Courriel du joueur	                     | VARCHAR | 25	    | Joueurs		     |
+| id_acces	           | Identifiant de l'accessoire	            | Int	    | 10	    | Accessoires		 |
+| id_carte	           | Identifiant de la carte	                | Int	    | 10	    | Cartes		      |
+| id_equipe	          | Identifiant de l'équipe	                | Int	    | 10	    | Equipes		     |
+| id_joueur	          | Identifiant du joueur	                  | Int	    | 10	    | Joueurs		     |
+| id_partie	          | Identifiant de la partie	               | Int	    | 10	    | Partie		      |
+| limite_joueur	      | Limite nombre de joueurs dans la carte	 | Int	    | 3	     | Cartes		      |
+| mdp_joueur	         | Mot de passe de compte du joueur	       | VARCHAR | 20	    | Joueurs		     |
+| nom_acces	          | Nom de l'accessoire	                    | VARCHAR | 65	    | Accessoires		 |
+| nom_carte	          | Nom de la carte	                        | VARCHAR | 25	    | Cartes		      |
+| nom_equipe	         | Nom de l'équipe	                        | VARCHAR | 25	    | Equipes		     |
+| nom_joueur	         | Nom du joueur	                          | VARCHAR | 20	    | Joueurs		     |
+| prenom_joueur	      | Prenom du joueur	                       | VARCHAR | 65	    | Joueurs		     |
+| rang	               | Numero de rang	                         | Int	    | 5	     | Rangs		       |
+| role_equipe	        | Rôle des membres de l'équipe	           | VARCHAR | 65	    | Equipes		     |
+| score_equipe	       | Score de l'équipe	                      | Int	    | 15	    | Equipes		     |
+| score_globale	      | Score globable des joueurs	             | Int	    | 15	    | Rangs		       |
+| score_partie	       | Score de la partie	                     | Int	    | 10	    | Partie		      |
+| taille_carte	       | Taille de la carte	                     | Int	    | 25	    | Cartes		      |
+| type_acces	         | Type d'accessoire	                      | VARCHAR | 65	    | Accessoires		 |
+| type_carte	         | Type de la carte	                       | VARCHAR | 120	   | Cartes		      |
 
 ### MCD
 
-![](/MCD.png)
+![](assets/MCD.png)
 
 ### MLD
 
@@ -65,7 +64,7 @@ a_un_Rang = (#id_joueur, #id_partie, rang INT, scores_globale INT);
 
 ### MPD
 
-![](/MPD.png)
+![](assets/MPD.png)
 
 ### SQL
 
