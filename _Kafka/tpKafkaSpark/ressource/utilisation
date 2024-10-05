@@ -1,0 +1,23 @@
+Utilisation des commandes:
+> /join #general
+> /msg Salut tout le monde !
+> /part #general
+> /active #private
+> /msg toto Salut !
+
+Commande join:
+La commande join prend un nom de canal en argument. Elle vérifie que le nom du canal est valide, puis elle abonne
+le consommateur Kafka à ce canal. Elle change également le canal actif.
+
+Commande part:
+La commande part prend un nom de canal en argument. Elle vérifie que le canal est actuellement rejoint, puis elle
+désabonne le consommateur Kafka de ce canal. Elle change ensuite le canal actif pour l'un des autres canaux encore
+rejoints.
+
+Commande msg:
+La commande msg prend une ligne de texte en argument. Elle vérifie qu'un canal est actif, puis elle envoie le message
+sur ce canal. Le message est formaté sous la forme d'une paire constituée du pseudo et du message.
+
+Commande active:
+La commande active prend un nom de canal en argument. Elle vérifie que le canal est actuellement rejoint, puis elle en
+fait le canal actif pour les prochaines commandes msg.

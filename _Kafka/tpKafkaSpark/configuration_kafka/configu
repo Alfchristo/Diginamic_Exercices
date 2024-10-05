@@ -1,0 +1,36 @@
+# Topics:
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_channel_general
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_channel_sport
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_channel_science
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_channel_arts
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_channel_politique
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_admin
+
+# Groupes
+kafka-consumer-groups.sh --create --zookeeper localhost:2181 --group chat_consumer_group_general
+
+kafka-consumer-groups.sh --create --zookeeper localhost:2181 --group chat_consumer_group_sport
+
+kafka-consumer-groups.sh --create --zookeeper localhost:2181 --group chat_admin_consumer_group
+
+# Utilisateurs
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_join_<nom_utilisateur>
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chat_part_<nom_utilisateur>
+
+kafka-consumer-groups.sh --create --zookeeper localhost:2181 --group chat_join_group
+# Ce groupe est utilisé par les clients de chat pour consommer les messages de connexion.
+
+kafka-consumer-groups.sh --create --zookeeper localhost:2181 --group chat_part_group
+# Ce groupe est utilisé par les clients de chat pour consommer les messages de déconnexion.
+
+
+
+
+
+
